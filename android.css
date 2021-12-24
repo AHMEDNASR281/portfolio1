@@ -32,3 +32,13 @@
 #send{
     width: 20%;
 }
+.headings1::before{
+    background: #2f2f2f; 
+    animation: typewriter 6s steps(28) forwards infinite ;
+}
+.headings1::after{
+    width: .125em;
+    background: black; 
+    animation: typewriter 6s steps(28) forwards infinite; 
+
+}

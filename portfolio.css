@@ -67,13 +67,43 @@ html{
     position: absolute;
     top: 30%;
     right: 10%;
+    margin: auto;
 
 }
 .headings{
-    font-family: century;
-    font-size: 3rem;
+    font-family: "source code pro" , monospace;
+    font-size: 2rem;
     text-align: center;
-    margin: 40px 0px ;
+    margin: auto ;
+}
+.headings1{
+    position: relative;
+    font-family: monospace;
+    width: max-content;
+}
+.headings1::before,
+.headings1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.headings1::before{
+    background: #1b1b1b;
+    animation: typewriter 6s steps(28) forwards infinite;
+}
+.headings1::after{
+    width: .125em;
+    background: black; 
+    animation: typewriter 6s steps(28) forwards infinite; 
+
+}
+@keyframes typewriter {
+    to{
+        left:100%
+    }
 }
 .button{
     padding: 10px 35px;
@@ -82,6 +112,7 @@ html{
     color: white;
     outline: none;
     transition: .7s ease;
+    margin: 20px;
     
 }
 .button:hover{
@@ -118,7 +149,7 @@ html{
     flex-direction: column;
     text-align: center;
     padding: 10px;
-    font-family:sans-serif;
+    font-family:sans-"source code pro" , monospace;
     font-weight: bold;
 }
 #intro h2{
